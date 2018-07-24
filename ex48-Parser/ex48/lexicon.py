@@ -12,13 +12,14 @@ class lexicon(object):
 		result = []
 		for word in words:
 			if checkWord(word,directions):
-				pass
+				result.append(('direction',word))
 			elif checkWord(word,verbs):
-				pass
+				result.append(('verb',word))
 			elif checkWord(word,nouns):
-				pass
+				result.append(('noun', word))
 			elif checkWord(word,stopList):
-				pass
+				result.append(('stopList', word))
+			
 
 
 	def checkWord(word,dictionary):

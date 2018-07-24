@@ -1,5 +1,5 @@
 from nose.tools import *
-from ex48 import lexicon
+from ex48.lexicon import lexicon
 
 
 def test_directions():
@@ -10,7 +10,7 @@ def test_directions():
 						  ('direction', 'east')])
 
 def test_verbs():
-	assert_equal(lexicion.scan("go"), [('verb', 'go')])
+	assert_equal(lexicon.scan("go"), [('verb', 'go')])
 	result = lexicon.scan("go kill eat")
 	assert_equal(result, [('verb', 'kill'),
 						  ('verb', 'kill'),
